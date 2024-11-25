@@ -30,6 +30,10 @@ const server = net.createServer((socket: any) => {
       }
     }
   });
+
+  socket.on("error", (err: Error) => {
+    console.error(`Erro no socket: ${err.message}`);
+  });
 });
 
 server.listen(5000, () => {

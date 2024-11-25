@@ -25,7 +25,7 @@ async function processLineByLine(filePath: string) {
     const sent = await sendLineOverTcp(line);
 
     console.log(
-      "pacote enviado, resposta: " + tipoComando + " arquivo: " + filePath
+      "pacote enviado, tipo de comando: " + tipoComando + " arquivo: " + filePath
     );
 
     if (sent == true && tipoComando == ping && semRespostaAnterior == false) {
@@ -43,7 +43,7 @@ async function processLineByLine(filePath: string) {
         await sendLineOverTcp(line);
 
         console.log(
-          "pacote enviado, resposta: " + tipoComando + " arquivo: " + filePath
+          "pacote enviado, tipo de comando: 02, arquivo: " + filePath
         );
       }
       localizacaoHistorica = [];
