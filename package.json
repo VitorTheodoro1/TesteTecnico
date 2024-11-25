@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "servidor": "npx tsx src/servidor.ts",
+    "client": "npx tsx src/client.ts"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
